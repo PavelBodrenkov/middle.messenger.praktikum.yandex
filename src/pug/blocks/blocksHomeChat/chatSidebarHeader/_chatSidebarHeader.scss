@@ -1,0 +1,28 @@
+// .header-list {
+//     padding-top:22px;
+//   & a {
+//     color: #999999;
+//     font-weight: 500;
+//     font-size: 12px;
+//     line-height: 12px;
+//     text-decoration: none;
+//   }
+// }
+.chat__sidebar-header {
+  display: flex;
+ 
+  justify-content: space-between;
+  padding:21px;
+  height: 23px;
+  border-bottom: 1px solid #f7f7f7;
+  margin-bottom: 20px;
+  & > div {
+      span {
+          display: inline-block;
+          margin-right: 5px;
+      }
+  }
+  .link-chat__sidebar-header {
+    color:#999999
+  }
+}

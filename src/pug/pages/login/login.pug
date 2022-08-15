@@ -1,5 +1,15 @@
 extends ../../layout/main/layoutMain
 
+block scripts
+    link(rel='stylesheet', href='../../../index.css')
+    script(src="../../../index.js" type='module')
+
 block content
-    h1 login
-    a(href="../register/register.pug") test
+    .login
+        .login__content
+            h2 Вход
+            form.login__form(action="#")
+                input(placeholder='Логин' type='text' name='login') 
+                input(placeholder='Пароль' type='password' name='password') 
+                +button('submit', 'Авторизоваться', 'login')
+                +link('../register/register', 'Нет аккаунта ?', 'login')

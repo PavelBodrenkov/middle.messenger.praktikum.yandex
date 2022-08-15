@@ -1,0 +1,18 @@
+.upload-file {
+  & > label {
+    color: #3369F3;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: 'Inter';
+  }
+
+  & > label:hover {
+    text-decoration: underline;
+  }
+
+  & > #file_input_id {
+    display: none;
+  }
+}

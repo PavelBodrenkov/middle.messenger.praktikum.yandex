@@ -1,0 +1,8 @@
+extends ../../layout/main/layoutMain
+
+block scripts
+    link(rel='stylesheet', href='../../../index.css')
+    script(src="../../../index.js" type='module')
+
+block content
+    +errors('500', text='Мы уже фиксим', '../home/home', 'Назад к чатам')

@@ -1,0 +1,23 @@
+.chat__dialog-input {
+    margin:20px;
+    position: relative;
+   display: flex;
+   align-items: center;
+   gap:15px;
+    & input {
+        width:100%;
+        height: 40px;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    &_smile-btn {
+      & span {
+      
+      }
+    }
+    &_actions {
+        display: flex;
+        gap:10px;
+    }
+}

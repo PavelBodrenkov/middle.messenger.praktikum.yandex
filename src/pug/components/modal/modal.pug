@@ -1,0 +1,11 @@
+mixin modal(title='Звголовок', btnText='Текст кнопки')
+    .modal
+        .modal__wrapp 
+            .modal__wrapp-content 
+                h5= title
+                if block 
+                    block 
+                else 
+                    span pic.jpg
+                +button('button', `${btnText}`, 'modal')
+                    

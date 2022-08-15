@@ -1,0 +1,12 @@
+.chat__sidebar-search {
+    padding:0 20px 20px 20px;
+    border-bottom: 1px solid #eaeaea;
+    & > input {
+        width:100%;
+        background-color: #f7f8f9;
+        border: none;
+        padding:5 10;
+        box-sizing: border-box;
+        border-radius: 5;
+    }
+}

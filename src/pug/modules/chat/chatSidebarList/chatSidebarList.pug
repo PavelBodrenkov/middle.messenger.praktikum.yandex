@@ -15,9 +15,10 @@
         {id:13, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН'},
     ]
 
-.list-chat
-    +headerList
-    +searchChat
-    .list-active-chat
-        each value in data
-            +buttonChat(value)
+.chat__sidebar
+    +chatSidebarHeader
+    +chatSidebarSearch
+    .chat__sidebar-dialogs
+        .dialogs
+            each value in data
+                +buttonChat(value)
