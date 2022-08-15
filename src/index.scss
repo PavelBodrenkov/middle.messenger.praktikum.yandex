@@ -1,0 +1,9 @@
+body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@import "pug/pages/home/home";
+@import "pug/modules/modules";
+@import "pug/blocks/blocks";

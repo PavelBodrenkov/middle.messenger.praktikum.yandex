@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-content {
+  max-width: 310px;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #FBFBFB;
+}
+
+.list-chat {
+  text-align: end;
+  padding: 0 10px 0 10px;
+  position: relative;
+}
+.list-chat .list-active-chat {
+  height: calc(100% - 110px);
+  overflow-y: auto;
+}
+.list-chat .list-active-chat .button-chat:hover {
+  background-color: #efefef;
+  cursor: pointer;
+}
+
+.header-list {
+  padding-top: 22px;
+}
+.header-list a {
+  color: #999999;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  text-decoration: none;
+}
+
+.search-chat {
+  display: flex;
+  justify-content: center;
+  height: 32px;
+  padding-top: 23px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #EAEAEA;
+}
+.search-chat input {
+  width: 100%;
+  border: none;
+  background-color: #EFEFEF;
+  border-radius: 5px;
+}
+.search-chat [placeholder] {
+  text-align: center;
+}
+
+.button-chat {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px 0 12px 0;
+  border-bottom: 1px solid #EAEAEA;
+}
+.button-chat .button-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+.button-chat .button-content .button-avatar {
+  width: 47px;
+  height: 47px;
+}
+.button-chat .button-content .button-avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px;
+}
+.button-chat .button-content .content-button-avatar h4 {
+  margin: 0;
+  text-align: left;
+  color: #1E1E1E;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 13px;
+}
+.button-chat .button-content .content-button-avatar span {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+.button-chat .button-content .content-button-avatar span:first-child {
+  font-weight: bold;
+}
+.button-chat .button-content .content-button-avatar span:last-child {
+  color: #999999;
+}
+.button-chat .buttonMessage-day span {
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 13px;
+  color: #999999;
+}/*# sourceMappingURL=index.css.map */

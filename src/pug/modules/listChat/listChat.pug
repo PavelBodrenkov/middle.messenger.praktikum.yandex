@@ -1,0 +1,23 @@
+-
+    var data = [
+        {id:1, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН'},
+        {id:2, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН'},
+        {id:3, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН'},
+        {id:4, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН'},
+        {id:5, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН'},
+        {id:6, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН'},
+        {id:7, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН'},
+        {id:8, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН'},
+        {id:9, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН'},
+        {id:10, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН'},
+        {id:11, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН'},
+        {id:12, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН'},
+        {id:13, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН'},
+    ]
+
+.list-chat
+    +headerList
+    +searchChat
+    .list-active-chat
+        each value in data
+            +buttonChat(value)

@@ -1,0 +1,14 @@
+.list-chat {
+    text-align: end;
+    padding:0 10px 0 10px;
+    position: relative;
+    & .list-active-chat {
+        height: calc(100% - 110px);
+        overflow-y: auto;
+        & .button-chat:hover {
+            background-color: #efefef;
+            cursor: pointer;
+        }
+    }
+    
+}
