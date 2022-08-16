@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "Inter";  
+    src: url("./fonts/Inter-Regular.woff") format("woff"),
+    url("./fonts/Inter-Regular.woff2") format("woff2");
+    font-style: normal; 
+    font-weight: normal;
+}
+
 html {
     height: 100%;
 }
@@ -7,6 +15,8 @@ body {
     padding:0;
     box-sizing: border-box;
     height: 100%;
+    font-family: 'Inter';
+    font-style: normal;
 }
 
 *,
@@ -50,7 +60,6 @@ html {
     color:#fff;
     border-radius: 8px;
     cursor: pointer;
-    font-family: 'Inter';
     width: 100%;
 }
 
