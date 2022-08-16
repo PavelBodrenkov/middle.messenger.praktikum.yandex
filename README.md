@@ -17,3 +17,6 @@
 - `npm install` — установка зависимостей,
 - `npm run dev` — запуск версии для разработчика,
 - `npm run build` — сборка стабильной версии.
+
+### Ссылка на макет
+https://www.figma.com/file/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=12%3A35
