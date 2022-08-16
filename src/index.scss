@@ -63,7 +63,7 @@ html {
     width: 100%;
 }
 
-// @import "pug/index";
+@import "pug/index.scss";
 @import "pug/pages/home/home";
 @import "pug/pages/register/register";
 @import "pug/pages/login/login";
