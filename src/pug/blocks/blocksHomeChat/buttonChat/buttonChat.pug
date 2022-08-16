@@ -8,5 +8,6 @@ mixin buttonChat(value)
                 .descr-content-message
                     span= `${value.mnemo}: `
                     span= value.dsc 
-        .buttonMessage-day
-            span= value.day
+        .button-chat__count-message
+            .day= value.day
+            .count= value.count

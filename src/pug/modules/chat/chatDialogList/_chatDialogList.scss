@@ -1,11 +1,9 @@
-// .chat-content {
-//     width: 80%;
-// }
 .chat__dialog {
     flex:1;
+    padding:0 20px 0 20px;
     &-messages {
-        padding:20px;
+        padding:20px 0 20px 0;
         overflow: auto;
-        height: calc(100% - 192px);
+        height: calc(100% - 165px);
     }
 }

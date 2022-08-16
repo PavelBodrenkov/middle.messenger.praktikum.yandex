@@ -1,12 +1,13 @@
 .chat__sidebar {
-    width: 320px;
-    border-right: 1px solid #f7f7f7;
-    background-color:  #FBFBFB;
-    &-dialogs {
-        height: calc(100% - 133px);
-        overflow-y: auto;
-        .dialogs {
-            padding: 0 20px;
-        }
+  width: 320px;
+  border-right: 1px solid #f7f7f7;
+  background-color: #fbfbfb;
+  padding: 20px 10px 0 10px;
+  &-dialogs {
+    height: calc(100% - 86px);
+    overflow-y: auto;
+    .dialogs {
+      padding: 0 20px;
     }
+  }
 }
