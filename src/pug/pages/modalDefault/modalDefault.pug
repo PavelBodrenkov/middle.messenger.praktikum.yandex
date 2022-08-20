@@ -1,0 +1,7 @@
+extends ../../layout/main/layoutMain
+
+block content
+    +modal('Загрузите файл', 'Поменять')
+        .upload-file
+            label(for='file_input_id') Выберите файл на компьютере
+            input(type="file" id='file_input_id' name='avatar')

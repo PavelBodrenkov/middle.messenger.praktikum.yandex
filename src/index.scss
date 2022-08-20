@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Inter";  
+    src: url("./fonts/Inter-Regular.woff") format("woff"),
+    url("./fonts/Inter-Regular.woff2") format("woff2");
+    font-style: normal; 
+    font-weight: normal;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+*,
+html *
+{
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+}
+
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track {
+    background: rgb(231, 231, 231);
+}
+
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb {
+    background-color: rgb(187, 185, 185);
+    border-radius: 5px;
+    border: 3px solid rgb(187, 185, 185);
+}
+
+html {
+    background: lightgrey;
+    overflow: hidden;
+}
+
+.link {
+    text-decoration: none
+}
+
+.btn {
+    background-color: #3369F3;
+    border:none;
+    padding:12px 0;
+    color:#fff;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+@import "pug/index.scss";
+@import "pug/pages/home/home";
+@import "pug/pages/register/register";
+@import "pug/pages/login/login";
+@import "pug/pages/profile/profile";
+@import "pug/pages/modalDefault/modalDefault";
+@import "pug/pages/updateProfile/updateProfile";
+@import "pug/modules/modules";
+@import "pug/blocks/blocks";
+@import "pug/components/components";

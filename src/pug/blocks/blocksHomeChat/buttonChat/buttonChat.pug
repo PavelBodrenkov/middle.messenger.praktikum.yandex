@@ -1,0 +1,13 @@
+mixin buttonChat(value)
+    .button-chat
+        .button-content
+            .button-avatar
+                img(src=`${value.avatar}`)
+            .content-button-avatar
+                h4= value.name
+                .descr-content-message
+                    span= `${value.mnemo}: `
+                    span= value.dsc 
+        .button-chat__count-message
+            .day= value.day
+            .count= value.count

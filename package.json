@@ -1,0 +1,30 @@
+{
+  "name": "middle.messenger.praktikum.yandex",
+  "version": "1.0.0",
+  "description": "---",
+  "scripts": {
+    "dev": "parcel src/pug/index.pug --open",
+    "build": "parcel build src/pug/index.pug",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PavelBodrenkov/middle.messenger.praktikum.yandex.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PavelBodrenkov/middle.messenger.praktikum.yandex/issues"
+  },
+  "homepage": "https://github.com/PavelBodrenkov/middle.messenger.praktikum.yandex#readme",
+  "dependencies": {
+    "parcel-transformer-pug-precompile": "^1.0.6",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.7.0",
+    "@parcel/transformer-sass": "^2.7.0",
+    "express": "^4.18.1",
+    "parcel": "^2.7.0"
+  }
+}

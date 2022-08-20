@@ -1,0 +1,24 @@
+-
+    var data = [
+        {id:1, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН', count:4},
+        {id:2, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН', count:4},
+        {id:3, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН', count:4},
+        {id:4, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН', count:4},
+        {id:5, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН', count:4},
+        {id:6, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН', count:4},
+        {id:7, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН', count:4},
+        {id:8, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН', count:4},
+        {id:9, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН', count:4},
+        {id:10, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН', count:4},
+        {id:11, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН', count:4},
+        {id:12, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН', count:4},
+        {id:13, avatar:'../../../img/avatar.png', name:'Павел', mnemo:'Вы', dsc:'test', day:'ПН', count:4},
+    ]
+
+.chat__sidebar
+    +chatSidebarHeader
+    +chatSidebarSearch
+    .chat__sidebar-dialogs
+        .dialogs
+            each value in data
+                +buttonChat(value)

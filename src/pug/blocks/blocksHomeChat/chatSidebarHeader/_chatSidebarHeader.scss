@@ -1,0 +1,10 @@
+.chat__sidebar-header {
+  display: flex;
+  justify-content: end;
+  padding: 0 0 23px 0;
+  height: 23px;
+
+  .link-chat__sidebar-header {
+    color: #999999;
+  }
+}

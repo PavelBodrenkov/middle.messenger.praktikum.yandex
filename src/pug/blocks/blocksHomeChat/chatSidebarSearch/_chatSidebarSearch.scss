@@ -1,0 +1,33 @@
+.chat__sidebar-search {
+  padding: 0 0 14px 0;
+  border-bottom: 1px solid #eaeaea;
+  & > input {
+    width: 100%;
+    background-color: #efefef;
+    outline: none;
+    border: none;
+    padding: 5 10;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 32px;
+
+    &::placeholder {
+      text-align: center;
+    }
+    &:focus::-webkit-input-placeholder {
+      color: transparent;
+    }
+
+    &:focus::-moz-placeholder {
+      color: transparent;
+    }
+
+    &:focus:-moz-placeholder {
+      color: transparent;
+    }
+
+    &:focus:-ms-input-placeholder {
+      color: transparent;
+    }
+  }
+}
