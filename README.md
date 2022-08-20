@@ -1,3 +1,4 @@
+
 # Мессенджер
 Проект находится в стадии разработки
 
@@ -20,3 +21,6 @@
 
 ### Ссылка на макет
 https://www.figma.com/file/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=12%3A35
+
+### Netlify https://steady-pavlova-0842ad.netlify.app/
+
