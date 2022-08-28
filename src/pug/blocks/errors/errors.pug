@@ -2,5 +2,5 @@ mixin errors (error='404', text='Не туда попали', href='#', textLink
     .error
         .error__content 
             h1= error
-            h3= text
+            h2= text
             +link(`${href}`, `${textLink}`, 'error404')
