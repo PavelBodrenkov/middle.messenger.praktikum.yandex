@@ -6,29 +6,14 @@ block content
             .profile__container-avatar 
                 img(src='../../../img/avatar.png')
             .profile__container-name
-                h4 Павел
-            form.profile__container-form
-                .profile__container-form_input
-                    div Почта
-                    +input('pochta@yandex.ru', 'email', 'email', 'profile')
-                .profile__container-form_input
-                    div Логин
-                    +input('ivanivanov', 'text', 'login', 'profile')
-                .profile__container-form_input
-                    div Имя
-                    +input('Иван', 'text', 'first_name', 'profile')
-                .profile__container-form_input
-                    div Фамилия
-                    +input('Иванов', 'text', 'second_name', 'profile')
-                .profile__container-form_input
-                    div Имя в чате
-                    +input('Иван', 'text', 'display_name', 'profile')
-                .profile__container-form_input
-                    div Телефон
-                    +input('+7 (909) 967 30 30', 'tel', 'phone', 'profile')
-                .profile__container-form_button 
-                    p Изменить данные
-                    p Изменить Пароль
-                    +link('#', 'Выйти', 'logout')
-                
-                
+                h4 #{title}
+                form.profile__container-form
+                    each val, index in data 
+                        .profile__container-form_input
+                            div= val.value
+                            | !{inputs[index]}
+                        span(id=`${val.id}-error-validate` class='error-validate') ошибка
+                    .profile__container-form_button 
+                        p Изменить данные
+                        p Изменить Пароль
+                        +link('#', 'Выйти', 'logout')

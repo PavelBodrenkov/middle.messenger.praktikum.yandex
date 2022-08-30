@@ -19,6 +19,14 @@ body {
     font-style: normal;
 }
 
+#app {
+    height: 100%;
+}
+
+#app > div {
+    height: 100%;
+}
+
 *,
 html *
 {
@@ -61,6 +69,17 @@ html {
     border-radius: 8px;
     cursor: pointer;
     width: 100%;
+}
+
+.error-validate {
+    display: none;
+}
+
+.active-error {
+    display:inline-block;
+    color:red;
+    font-size: 10px;
+    text-align: left;
 }
 
 @import "pug/index.scss";

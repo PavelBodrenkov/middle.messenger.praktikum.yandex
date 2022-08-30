@@ -3,9 +3,10 @@ extends ../../layout/main/layoutMain
 block content
     .login
         .login__content
-            h2 Вход
+            h2 #{title}
             form.login__form(action="#")
-                input(placeholder='Логин' type='text' name='login') 
-                input(placeholder='Пароль' type='password' name='password') 
-                +button('submit', 'Авторизоваться', 'login')
-                +link('../register/register', 'Нет аккаунта ?', 'login')
+                each val, index in data
+                    | !{inputs[index]}
+                    span(id=`${val.id}-error-validate` class='error-validate') ошибка
+                | !{button}
+            +link('/pages/register/register.pug', 'Нет аккаунта ?', 'login')

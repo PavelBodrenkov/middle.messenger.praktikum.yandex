@@ -42,10 +42,12 @@
           font-weight: 500;
           font-size: 13px;
           line-height: 13px;
+          text-align: start;
         }
       }
       &_button {
         margin-top: 60px;
+        text-align: start;
         & > p {
           border-bottom: 1px solid #eaeaea;
           color: #3369f3;

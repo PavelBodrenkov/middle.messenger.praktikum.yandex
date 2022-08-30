@@ -3,14 +3,10 @@ extends ../../layout/main/layoutMain
 block content
     .register
         .register__content
-            h2 Регистрация
+            h2 #{title}
             form.register__form(action="#")
-                input(placeholder='Почта' type='email' name='email') 
-                input(placeholder='Логин' type='text' name='login') 
-                input(placeholder='Имя' type='text' name='first_name') 
-                input(placeholder='Фамилия' type='text' name='second_name') 
-                input(placeholder='Телефон' type='tel' name='phone') 
-                input(placeholder='Пароль' type='password' name='password') 
-                input(placeholder='Пароль(еще раз)' type='password' name='password')
-                +button('submit', 'Зарегиcтрироваться', 'register')
-                +link('../login/login', 'Войти', 'register')
+                each val, index in data
+                    | !{inputs[index]}
+                    span(id=`${val.id}-error-validate` class='error-validate') ошибка
+                | !{button}
+            +link('/pages/login/login.pug', 'Войти', 'register')

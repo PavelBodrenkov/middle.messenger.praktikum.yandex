@@ -1,9 +1,10 @@
 @font-face {
   font-family: "Inter";
-  src: url("./fonts/Inter-Regular.woff") format("woff"), url("./fonts/Inter-Regular.woff2") format("woff2");
+  src: url("../fonts/Inter-Regular.woff") format("woff"), url("../fonts/Inter-Regular.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
 }
+
 html {
   height: 100%;
 }
@@ -15,14 +16,6 @@ body {
   height: 100%;
   font-family: "Inter";
   font-style: normal;
-}
-
-#app {
-  height: 100%;
-}
-
-#app > div {
-  height: 100%;
 }
 
 *,
@@ -66,17 +59,6 @@ html {
   border-radius: 8px;
   cursor: pointer;
   width: 100%;
-}
-
-.error-validate {
-  display: none;
-}
-
-.active-error {
-  display: inline-block;
-  color: red;
-  font-size: 10px;
-  text-align: left;
 }
 
 .main {
@@ -123,21 +105,10 @@ html {
   width: 340px;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
   border-radius: 12px;
-  text-align: center;
 }
 .register__content h2 {
   text-align: center;
   margin: 50px 40px;
-}
-.register__content .link-register {
-  text-align: center;
-  margin-top: 14px;
-  margin-bottom: 30px;
-  color: #3369F3;
-  font-weight: 500;
-  font-size: 11px;
-  line-height: 11px;
-  display: block;
 }
 .register__content .register__form {
   display: flex;
@@ -153,6 +124,15 @@ html {
 .register__content .register__form .btn-register {
   margin-top: 47px;
 }
+.register__content .register__form .link-register {
+  text-align: center;
+  margin-top: 14px;
+  margin-bottom: 30px;
+  color: #3369F3;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 11px;
+}
 
 .login {
   display: flex;
@@ -166,21 +146,10 @@ html {
   width: 340px;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
   border-radius: 12px;
-  text-align: center;
 }
 .login__content h2 {
   text-align: center;
   margin: 50px 40px;
-}
-.login__content .link-login {
-  text-align: center;
-  margin-top: 14px;
-  margin-bottom: 30px;
-  color: #3369F3;
-  font-weight: 500;
-  font-size: 11px;
-  line-height: 11px;
-  display: block;
 }
 .login__content .login__form {
   display: flex;
@@ -195,6 +164,15 @@ html {
 }
 .login__content .login__form .btn-login {
   margin-top: 159px;
+}
+.login__content .login__form .link-login {
+  text-align: center;
+  margin-top: 14px;
+  margin-bottom: 30px;
+  color: #3369F3;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 11px;
 }
 
 .profile {
@@ -245,11 +223,9 @@ html {
   font-weight: 500;
   font-size: 13px;
   line-height: 13px;
-  text-align: start;
 }
 .profile__container-form_button {
   margin-top: 60px;
-  text-align: start;
 }
 .profile__container-form_button > p {
   border-bottom: 1px solid #eaeaea;
@@ -313,7 +289,7 @@ html {
 .chat__dialog-messages {
   padding: 20px 0 20px 0;
   overflow: auto;
-  height: calc(100% - 169px);
+  height: calc(100% - 254px);
 }
 
 .chat__sidebar {

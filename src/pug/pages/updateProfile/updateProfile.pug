@@ -8,14 +8,10 @@ block content
             .profile__container-name
                 h4 Павел
             form.profile__container-form
-                .profile__container-form_input
-                    div Старый пароль
-                    +input('pochta@yandex.ru', 'password', 'oldPassword', 'profile')
-                .profile__container-form_input
-                    div Новый пароль
-                    +input('ivanivanov', 'password', 'newPassword', 'profile')
-                .profile__container-form_input
-                    div Повторите пароль
-                    +input('Иван', 'password', 'password', 'profile')
+                each val, index in data 
+                    .profile__container-form_input
+                        div= val.value
+                        | !{inputs[index]}
+                    span(id=`${val.id}-error-validate` class='error-validate') ошибка
                 .profile__container-form_button-save
-                    +button('submit', 'Сохранить', 'profile')
+                    | !{button}

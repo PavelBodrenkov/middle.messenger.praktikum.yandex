@@ -1,8 +1,3 @@
-// import Block from '../../utils/Block';
+import {Button} from './button'
 
-
-// export class Button extends Block {
-//     constructor(props: any) {
-//         super('button', props)
-//     }
-// }
+export default Button
